@@ -7,8 +7,8 @@ export default defineConfig({
   use: {
     baseURL: 'https://playwright.dev/',
     headless: true,
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
+    screenshot: 'on',
+    video: 'on',
   },
   projects: [
     { name: 'Chromium', use: { ...devices['Desktop Chrome'] } },
