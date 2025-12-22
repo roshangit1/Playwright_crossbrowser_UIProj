@@ -5,10 +5,11 @@ export default defineConfig({
   timeout: 30 * 1000,
   retries: 1,
   use: {
+    baseURL: "https://playwright.dev",
     headless: true,                // run in headless mode by default
-    screenshot: 'only-on-failure', // capture screenshots on failure
-    video: 'retain-on-failure',    // record video on failure
-    trace: 'retain-on-failure',    // keep trace files for debugging
+    screenshot: 'on', // capture screenshots on failure
+    video: 'on',    // record video on failure
+    trace: 'on',    // keep trace files for debugging
   },
 
   projects: [
