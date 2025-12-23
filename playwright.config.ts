@@ -14,8 +14,9 @@ export default defineConfig({
 
   projects: [
     { name: 'Chromium', use: { ...devices['Desktop Chrome'] } },
-    { name: 'Firefox', use: { ...devices['Desktop Firefox'] } },
+    { name: 'Firefox', use: { ...devices['Desktop Firefox'] } },    
     { name: 'WebKit', use: { ...devices['Desktop Safari'] } },
+    { name: 'Pixel 9', use: { ...devices['Pixel 9'] } },
   ],
   reporter: [['list'], ['html', { outputFolder: 'playwright-report' }]],
 });
